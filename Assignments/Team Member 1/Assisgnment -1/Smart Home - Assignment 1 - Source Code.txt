@@ -17,7 +17,7 @@ void setup() {
 void loop()
 {
   delay(1000);
-  Serial.println("===================");
+  Serial.println("!!!!!!!!!!!!!!!!!!!!!!");
   Lval = analogRead(Lsensor);
   Serial.println(Lval);      //Light Intensity
   if (Lval > Threshold)
@@ -34,11 +34,11 @@ void loop()
   if(Mval == HIGH)
   {
     tone(buzzer,1000);
-    Serial.println("Motion Detected");
+    Serial.println("Motion is Detected");
   }
   else
   {
     tone(buzzer,0);
-    Serial.println("No Motion");
+    Serial.println("No is Motion");
   }
 }
